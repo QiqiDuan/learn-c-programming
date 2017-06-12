@@ -180,7 +180,7 @@ $ cd /dev/ | grep -i nvidia
 加载NVIDIA设备
 $ sudo modprobe nvidia
 
-配置环境变量，在```/etc/profile```文件尾部添加以下内容：
+配置环境变量，在/etc/profile文件尾部添加以下内容：
 $ vi /etc/profile
 
 export CUDA_HOME="/usr/local/cuda-8.0/bin"
@@ -412,4 +412,6 @@ DQQ077 (段琦琦) [duanqq@mail.sustc.edu.cn || duanqq077@qq.com]，SUSTC-CS-OPA
 2017-04-27 21:00:00
 
 2017-06-11 14:00:00
+
+2017-06-12 16:00:00
 * ************************************************* *
