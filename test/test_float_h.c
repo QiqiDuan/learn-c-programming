@@ -15,4 +15,6 @@ int main( void ) {
     printf("FLT_EPSILON  : %e\n", FLT_EPSILON);
     printf("DBL_EPSILON  : %e\n", DBL_EPSILON);
     printf("LDBL_EPSILON : %Le\n", LDBL_EPSILON);
+    
+    return 0;
 }
