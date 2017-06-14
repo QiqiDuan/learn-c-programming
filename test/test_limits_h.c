@@ -25,4 +25,6 @@ int main( void ) {
     printf("LLONG_MIN  : %lld\n", LLONG_MIN);
     printf("LLONG_MAX  : %lld\n", LLONG_MAX);
     printf("ULLONG_MAX : %llu\n", ULLONG_MAX);
+    
+    return 0;
 }
