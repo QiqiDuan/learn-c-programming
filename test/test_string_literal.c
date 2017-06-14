@@ -8,4 +8,6 @@ int main( void ) {
 
     printf("%s", msg1);
     printf("%s", msg2);
+    
+    return 0;
 }
