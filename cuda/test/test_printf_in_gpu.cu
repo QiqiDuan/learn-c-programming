@@ -22,5 +22,5 @@ int main( void ) {
     HCE(cudaGetLastError());
     printf("* end test!\n");
 
-    return 0;
+    return EXIT_SUCCESS;
 }
