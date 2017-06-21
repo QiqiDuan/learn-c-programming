@@ -1,8 +1,8 @@
 /* ******************************************************************************************* *
- * CUDA Utils Designed for the OPtimization And Learning Laboratory (i.e. OPAL), SUSTC.
+ * CUDA Utils Designed for the OPtimization And Learning laboratory (i.e. OPAL), SUSTC.
  *
  * -----------------------------------------
- * Version: v00.00.000 [2017-06-14 21:00:00]
+ * Version: v00.00.001 [2017-06-21 20:00:00]
  * Author : DQQ-077    [Qiqi Duan]
  * Email  : duanqq@mail.sustc.edu.cn
  * ******************************************************************************************* */
@@ -20,9 +20,9 @@
     /**
      * HOST: Handle CUDA Errors.
      */
-    #define HCE(cuda_expr) { print_GPU_error(cuda_expr, __FILE__, __LINE__); }
+    #define HCE(cuda_expr) { print_gpu_error(cuda_expr, __FILE__, __LINE__); }
 
-    void print_GPU_error(cudaError_t error_index,
+    void print_gpu_error(cudaError_t error_index,
             const char *error_file, const unsigned int error_line) {
         if (error_index != cudaSuccess) {
             fprintf(stderr, "\n\n\n***\nCUDA ERROR :: %s [LINE %u] ---> %s.\n***\n\n\n",
