@@ -8,7 +8,7 @@
 选择“Edit a connection”，
 选择“可以连接的网络端口”，
 选择“<Edit...>”，
-修改“[ ] Automatically connect”为"[X] Automatically connect"。
+修改“[ ] Automatically connect”为“[X] Automatically connect”。
 
 # systemctl restart network
 重新开启网络服务。
@@ -18,14 +18,13 @@
 
 # ping ping www.sustc.edu.cn
 验证网络连接是否成功（以校园网为例）。
-
 ```
 
 ## 解决“Failed to start LSB : Bring up/down networking”问题
 
 问题产生原因：在配置过程中，更换网络端口（例如将em1端口改为em4端口）。
 
-解决方案：删除所有的网络连接配置，新建连接即可。
+解决方案：删除所有的网络连接配置，新建连接即可（建议连接名与端口名相同）。
 
 ## 解决“网络无法自动启动”问题
 
