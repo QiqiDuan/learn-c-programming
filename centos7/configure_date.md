@@ -6,11 +6,10 @@
 官方网址：http://www.ntp.org/
 
 # ntpdate cn.pool.ntp.org
-更新系统时间，使其与UTC时间同步
+更新系统时间，使其与UTC时间同步。
 
 # hwclock --systohc
-将系统时间写入硬件时间
-
+将系统时间写入硬件时间。
 ```
 
 ## 系统时间管理工具
