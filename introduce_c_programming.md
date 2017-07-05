@@ -53,6 +53,50 @@ EINVAL | 非法参数
 EDOM | 区间错误（数学函数）
 ERANGE | 范围错误（数学函数）
 
+## C语言编程指针与常量关键字
+
+```C
+const data-type *pointer-name // error: assignment of read-only location
+*pointer-name = new-value     // NO
+pointer-name = &new-variable  // YES
+
+data-type *const pointer-name // error: assignment of read-only variable
+*pointer-name = new-value     // YES
+pointer-name = &new-variable  // NO
+
+const data-type *const pointer-name
+*pointer-name = new-value     // NO
+pointer-name = &new-variable  // NO
+```
+
+## C语言编程指针与一维数组
+
+```C
+data-type *pointer-name = &array-name[0]
+data-type *pointer-name = array-name
+```
+
+# C语言编程指针与二维数组
+
+```C
+// 输出结果相同
+printf("%p\n", array-name);
+printf("%p\n", &array-name[0][0]);
+printf("%p\n", array-name[0]);
+
+// 获取二维数组元素
+array-name[i][j] == *(array-name[i] + j)
+*(*array-name + t) == *(array-name[0] + t) // t == array-length * i + j
+```
+
+# C语言编程指针与动态内存分配
+
+```C
+data-type *pointer-name = (data-type *) malloc(length * sizeof(data-type));
+data-type *pointer-name = (data-type *) calloc(length, sizeof(data-type));
+free(pointer-name);
+```
+
 ## C语言编程经典参考资料
 
 [The GNU C Library](https://www.gnu.org/software/libc/manual/html_node/)
