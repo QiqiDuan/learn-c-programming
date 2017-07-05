@@ -76,7 +76,7 @@ data-type *pointer-name = &array-name[0]
 data-type *pointer-name = array-name
 ```
 
-# C语言编程指针与二维数组
+## C语言编程指针与二维数组
 
 ```C
 // 输出结果相同
@@ -89,7 +89,7 @@ array-name[i][j] == *(array-name[i] + j)
 *(*array-name + t) == *(array-name[0] + t) // t == array-length * i + j
 ```
 
-# C语言编程指针与动态内存分配
+## C语言编程指针与动态内存分配
 
 ```C
 data-type *pointer-name = (data-type *) malloc(length * sizeof(data-type));
