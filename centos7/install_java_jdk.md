@@ -14,6 +14,7 @@ OpenJDK 64-Bit Server VM (build 25.131-b12, mixed mode)
 # wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" 
   http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm?
 获取ORACLE公司提供的JAVA JDK软件版本：jdk-8u131-linux-x64.rpm。
+特别注意：以上的JAVA JDK软件版本会不断地进行更新，建议使用最新版本。
 
 # sudo yum localinstall jdk-8u131-linux-x64.rpm
 安装JAVA JDK的RPM软件包。
@@ -34,10 +35,10 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 如存在多个JAVA JDK软件版本，可能需要使用以上的命令进行选择、配置。
 
 # sudo vi /etc/profile.d/java.sh
+特别注意：/usr/java/jdk1.8.0_131/bin/java与/usr/java/jdk1.8.0_131/jre/bin/java之间的区别，具体解释见下文中的参考资料部分。
 配置JAVA JDK软件的系统环境变量，具体内容如下所示：
 export JAVA_HOME=/usr/java/jdk1.8.0_131
 export PATH=${JAVA_HOME}/bin:${PATH}
-
 
 # . /etc/profile.d/java.sh
 # echo $JAVA_HOME
@@ -52,3 +53,5 @@ export PATH=${JAVA_HOME}/bin:${PATH}
 ## 参考资料
 
 [Java SE Development Kit 8官方下载网址](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+[/usr/java/jdk1.8.0_131/bin/java与/usr/java/jdk1.8.0_131/jre/bin/java之间的区别](https://unix.stackexchange.com/questions/134985/whats-the-difference-between-java-located-inside-jdk-bin-and-jdk-jre-bin)
