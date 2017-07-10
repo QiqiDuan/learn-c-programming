@@ -241,3 +241,5 @@ http://openbenchmarking.org/result/1707107-TR-CRAY2668586
 http://openbenchmarking.org/result/1707102-TR-DQQCACHEB61
 
 http://openbenchmarking.org/result/1707108-TR-TESTNUMPY60
+
+http://openbenchmarking.org/result/1707108-TR-NUMPYDQQ472
