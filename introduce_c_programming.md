@@ -2,14 +2,14 @@
 
 ## C语言编程常用标准汇总
 
-标准（standard） ~~ 可移植性（portability）
+标准 [standard] ~~ 可移植性 [portability]
 
 C语言标准名称 | GCC编译选项
 ------------ | ----------
-ANSI C | -ansi
-ISO C |
+ANSI C | -ansi / -std=c89 / -std=c90 / -std=c99 / -std=c11
+ISO C | -std=iso9899:1990 / -std=iso9899:1999 / -std=iso9899:2011
 POSIX C |
-GNU C |
+GNU C | -std=gnu11 [gcc5默认选项]
 
 ## C语言编程变量与函数命名
 
