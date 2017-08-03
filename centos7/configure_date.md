@@ -20,6 +20,22 @@
 
 ```hwclock```：硬件时间管理工具。
 
+## 常用时间汇总
+
+UTC（Coordinated Universal Time）：协调世界时。
+
+CST：China Standard Time UT+8:00（中国标准时间）、Central Standard Time (USA) UT-6:00（美国中部时间）。
+
+```
+# date
+# date -u
+# cal
+# cal 2017
+# cal 08 2017
+
+# uptime
+```
+
 ## 参考资料
 
 [《Red Hat Enterprise Linux 7 System Administrator's Guide》](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/pdf/System_Administrators_Guide/Red_Hat_Enterprise_Linux-7-System_Administrators_Guide-en-US.pdf)
