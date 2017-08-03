@@ -39,6 +39,9 @@
 # exit
 # CTRL-D
 退出系统、关闭SHELL。
+
+# su - new-user-name
+切换到其他用户。
 ```
 
 ## 参考资料
