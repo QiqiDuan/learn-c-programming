@@ -33,6 +33,10 @@
 
 # last user-name
 # who
+# whoami
+# who am i
+# users
+# w user-name
 查看系统最近登录记录（包含重启）。
 
 # logout
