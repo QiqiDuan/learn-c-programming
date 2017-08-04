@@ -57,6 +57,8 @@ activateCommand=activateOffline
 licenseFile=/home/duanqq/MATLAB/R2016b/dvd/license.lic
 ```
 
+将```license.lic```文件，放入```licenseFile```指定的位置（简单起见，这里与MATLAB安装包所在目录一致）。
+
 配置```installer_input.txt```文件。
 
 ```
@@ -70,8 +72,6 @@ mode=silent
 activationPropertiesFile=/home/duanqq/MATLAB/R2016b/dvd/activate.ini
 lmgrFiles=false
 ```
-
-将生成的```license.lic```文件，放入MATLAB安装包所在目录。
 
 ## 运行MATLAB安装命令
 
@@ -207,20 +207,26 @@ export PATH
 
 ## 检测MATLAB软件是否安装成功
 
-运行MATLAB命令
+运行MATLAB命令。
 
 ```
 # matlab
 MATLAB is selecting SOFTWARE OPENGL rendering.
 
-                              < M A T L A B (R) >
-                    Copyright 1984-2016 The MathWorks, Inc.
-                     R2016b (9.1.0.441655) 64-bit (glnxa64)
-                               September 7, 2016
+                           < M A T L A B (R) >
+                 Copyright 1984-2016 The MathWorks, Inc.
+                  R2016b (9.1.0.441655) 64-bit (glnxa64)
+                            September 7, 2016
 
 
 To get started, type one of these: helpwin, helpdesk, or demo.
 For product information, visit www.mathworks.com.
+
+>> a = 1 : 2 : 11
+
+a =
+
+     1     3     5     7     9    11
 
 >>
 ```
