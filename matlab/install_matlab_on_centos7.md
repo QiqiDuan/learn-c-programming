@@ -24,7 +24,7 @@ MATLAB版本：MATLAB R2016b（完整的安装包大约有：12.6 GB）。
 建议使用机器的MAC地址作为Host ID，获取机器的MAC地址命令如下：
 
 ```
-dmesg | grep eth0
+# dmesg | grep eth0
 ```
 
 通过以上操作，可以生成的```license.lic```文件，并获取```fileInstallationKey```。
