@@ -53,22 +53,6 @@ EINVAL | 非法参数
 EDOM | 区间错误（数学函数）
 ERANGE | 范围错误（数学函数）
 
-## C语言编程指针与常量关键字
-
-```C
-const data-type *pointer-name // error: assignment of read-only location
-*pointer-name = new-value     // NO
-pointer-name = &new-variable  // YES
-
-data-type *const pointer-name // error: assignment of read-only variable
-*pointer-name = new-value     // YES
-pointer-name = &new-variable  // NO
-
-const data-type *const pointer-name
-*pointer-name = new-value     // NO
-pointer-name = &new-variable  // NO
-```
-
 ## C语言编程指针与一维数组
 
 ```C
